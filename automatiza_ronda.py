@@ -4,20 +4,18 @@ try:
 
     def captura_coord():
         x,y = pyautogui.position()
-        return x,y
+        print(f"{x}, {y}")
 
     def navega_tela():
-        pyautogui.moveTo(-1715, 4)
-
-    def clica_tela():
-        pyautogui.click()
+        pyautogui.click(-1226, 834)
+        pyautogui.click(-1813, 18)
+        pyautogui.click(-1710, 336)
 
 
     if __name__ == "__main__":
 
         captura_coord()
         navega_tela()
-        clica_tela()
 
 except:
 
