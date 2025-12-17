@@ -10,6 +10,9 @@ try:
         pyautogui.click(-1226, 834)
         pyautogui.click(-1813, 18)
         pyautogui.click(-1710, 336)
+        pyautogui.click(-1203, 774)
+
+    def escreve_tela()
 
 
     if __name__ == "__main__":
