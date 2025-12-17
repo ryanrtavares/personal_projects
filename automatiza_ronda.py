@@ -21,6 +21,7 @@ try:
     def escreve_tela():
         pyautogui.click(-1102, 783)
         pyautogui.write('teste')
+        pyautogui.click(-422, 783)
 
 
     if __name__ == "__main__":
