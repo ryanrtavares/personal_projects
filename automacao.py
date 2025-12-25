@@ -1,5 +1,6 @@
 import pyautogui
 import time
+import tkinter as tk
 
 
 def captura_coord():
@@ -50,6 +51,13 @@ def localiza_caixa():
         print(f"Localiza-se em: {loc}")
     else:
         print("Não localizado")
+    
+    left, top, width, height = loc
+
+    centro_x = left + (width / 2)
+    centro_y = top + (height / 2)
+
+    pyautogui.moveTo(centro_x, centro_y, duration=2)
 
 
 if __name__ == "__main__":
@@ -58,6 +66,6 @@ if __name__ == "__main__":
         # abre_navegdor()
         # acessa_site()
         # faz_captcha()
-        # acessa_bnotas()
-        # escreve_msg()
+        acessa_bnotas()
+        escreve_msg()
         localiza_caixa()
